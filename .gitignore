@@ -5,7 +5,6 @@
 
 # Log file
 *.log
-.idea/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -19,4 +18,8 @@
 *.tar.gz
 *.rar
 
+
+/.idea/*
+Будет удалено src/main/resources/
+Будет удалено src/test/
 
