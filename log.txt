@@ -1,0 +1,479 @@
+[    20.914] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[    20.914] Build Operating System: Linux Arch Linux
+[    20.914] Current Operating System: Linux smith-pc 5.0.9-2-MANJARO #1 SMP PREEMPT Sun Apr 21 07:11:08 UTC 2019 x86_64
+[    20.914] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.0-x86_64 root=UUID=d4151e24-4379-4c94-95e3-a789f84ad652 rw quiet
+[    20.914] Build Date: 27 February 2019  04:04:00PM
+[    20.914]  
+[    20.914] Current version of pixman: 0.38.4
+[    20.914] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    20.914] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    20.914] (==) Log file: "/var/log/Xorg.0.log", Time: Thu May  2 15:35:29 2019
+[    20.917] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    20.917] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    20.918] (==) No Layout section.  Using the first Screen section.
+[    20.918] (==) No screen section available. Using defaults.
+[    20.918] (**) |-->Screen "Default Screen Section" (0)
+[    20.918] (**) |   |-->Monitor "<default monitor>"
+[    20.919] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    20.919] (==) Automatically adding devices
+[    20.919] (==) Automatically enabling devices
+[    20.919] (==) Automatically adding GPU devices
+[    20.919] (==) Automatically binding GPU devices
+[    20.919] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    20.922] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    20.922] 	Entry deleted from font path.
+[    20.922] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    20.922] 	Entry deleted from font path.
+[    20.922] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/100dpi".
+[    20.922] 	Entry deleted from font path.
+[    20.922] 	(Run 'mkfontdir' on "/usr/share/fonts/100dpi").
+[    20.922] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/75dpi".
+[    20.922] 	Entry deleted from font path.
+[    20.922] 	(Run 'mkfontdir' on "/usr/share/fonts/75dpi").
+[    20.922] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF
+[    20.922] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    20.922] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    20.922] (II) Module ABI versions:
+[    20.922] 	X.Org ANSI C Emulation: 0.4
+[    20.922] 	X.Org Video Driver: 24.0
+[    20.922] 	X.Org XInput driver : 24.1
+[    20.922] 	X.Org Server Extension : 10.0
+[    20.922] (++) using VT number 7
+
+[    20.922] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    20.923] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    20.941] (--) PCI:*(0@0:2:0) 8086:0412:1849:0412 rev 6, Mem @ 0xf0800000/4194304, 0xe0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[    20.941] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    20.941] (II) LoadModule: "glx"
+[    20.950] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    20.966] (II) Module glx: vendor="X.Org Foundation"
+[    20.966] 	compiled for 1.20.4, module version = 1.0.0
+[    20.966] 	ABI class: X.Org Server Extension, version 10.0
+[    20.966] (==) Matched intel as autoconfigured driver 0
+[    20.966] (==) Matched modesetting as autoconfigured driver 1
+[    20.966] (==) Matched fbdev as autoconfigured driver 2
+[    20.966] (==) Matched vesa as autoconfigured driver 3
+[    20.966] (==) Assigned the driver to the xf86ConfigLayout
+[    20.966] (II) LoadModule: "intel"
+[    20.966] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[    20.970] (II) Module intel: vendor="X.Org Foundation"
+[    20.970] 	compiled for 1.20.4, module version = 2.99.917
+[    20.970] 	Module class: X.Org Video Driver
+[    20.970] 	ABI class: X.Org Video Driver, version 24.0
+[    20.970] (II) LoadModule: "modesetting"
+[    20.970] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    20.972] (II) Module modesetting: vendor="X.Org Foundation"
+[    20.972] 	compiled for 1.20.4, module version = 1.20.4
+[    20.972] 	Module class: X.Org Video Driver
+[    20.972] 	ABI class: X.Org Video Driver, version 24.0
+[    20.972] (II) LoadModule: "fbdev"
+[    20.973] (WW) Warning, couldn't open module fbdev
+[    20.973] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    20.973] (II) LoadModule: "vesa"
+[    20.973] (WW) Warning, couldn't open module vesa
+[    20.973] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    20.973] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[    20.973] (II) intel: Driver for Intel(R) HD Graphics
+[    20.973] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[    20.973] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[    20.973] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    21.019] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20181204
+[    21.019] (II) intel(0): SNA compiled from 2.99.917-863-g6afed33b
+[    21.020] (WW) Falling back to old probe method for modesetting
+[    21.021] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 4600
+[    21.021] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 4 threads
+[    21.021] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    21.021] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[    21.021] (==) intel(0): RGB weight 888
+[    21.021] (==) intel(0): Default visual is TrueColor
+[    21.022] (II) intel(0): Output VGA1 has no monitor section
+[    21.022] (II) intel(0): Enabled output VGA1
+[    21.022] (II) intel(0): Output HDMI1 has no monitor section
+[    21.022] (II) intel(0): Enabled output HDMI1
+[    21.022] (II) intel(0): Output HDMI2 has no monitor section
+[    21.022] (II) intel(0): Enabled output HDMI2
+[    21.022] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[    21.022] (II) intel(0): Output VIRTUAL1 has no monitor section
+[    21.022] (II) intel(0): Enabled output VIRTUAL1
+[    21.022] (--) intel(0): Output HDMI1 using initial mode 3840x2160 on pipe 0
+[    21.022] (==) intel(0): TearFree disabled
+[    21.022] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[    21.022] (==) intel(0): DPI set to (96, 96)
+[    21.022] (II) Loading sub module "dri3"
+[    21.022] (II) LoadModule: "dri3"
+[    21.022] (II) Module "dri3" already built-in
+[    21.022] (II) Loading sub module "dri2"
+[    21.022] (II) LoadModule: "dri2"
+[    21.022] (II) Module "dri2" already built-in
+[    21.022] (II) Loading sub module "present"
+[    21.022] (II) LoadModule: "present"
+[    21.022] (II) Module "present" already built-in
+[    21.022] (II) UnloadModule: "modesetting"
+[    21.022] (II) Unloading modesetting
+[    21.026] (II) intel(0): SNA initialized with Haswell (gen7.5, gt2) backend
+[    21.026] (==) intel(0): Backing store enabled
+[    21.026] (==) intel(0): Silken mouse disabled
+[    21.026] (II) intel(0): HW Cursor enabled
+[    21.029] (==) intel(0): DPMS enabled
+[    21.029] (==) intel(0): Display hotplug detection enabled
+[    21.031] (II) intel(0): [DRI2] Setup complete
+[    21.031] (II) intel(0): [DRI2]   DRI driver: i965
+[    21.031] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[    21.031] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[    21.031] (II) intel(0): hardware support for Present enabled
+[    21.031] (II) Initializing extension Generic Event Extension
+[    21.031] (II) Initializing extension SHAPE
+[    21.031] (II) Initializing extension MIT-SHM
+[    21.031] (II) Initializing extension XInputExtension
+[    21.032] (II) Initializing extension XTEST
+[    21.032] (II) Initializing extension BIG-REQUESTS
+[    21.032] (II) Initializing extension SYNC
+[    21.032] (II) Initializing extension XKEYBOARD
+[    21.032] (II) Initializing extension XC-MISC
+[    21.032] (II) Initializing extension SECURITY
+[    21.032] (II) Initializing extension XFIXES
+[    21.032] (II) Initializing extension RENDER
+[    21.032] (II) Initializing extension RANDR
+[    21.033] (II) Initializing extension COMPOSITE
+[    21.033] (II) Initializing extension DAMAGE
+[    21.033] (II) Initializing extension MIT-SCREEN-SAVER
+[    21.033] (II) Initializing extension DOUBLE-BUFFER
+[    21.033] (II) Initializing extension RECORD
+[    21.033] (II) Initializing extension DPMS
+[    21.033] (II) Initializing extension Present
+[    21.033] (II) Initializing extension DRI3
+[    21.033] (II) Initializing extension X-Resource
+[    21.033] (II) Initializing extension XVideo
+[    21.033] (II) Initializing extension XVideo-MotionCompensation
+[    21.033] (II) Initializing extension GLX
+[    21.069] (II) AIGLX: Loaded and initialized i965
+[    21.069] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    21.069] (II) Initializing extension XFree86-VidModeExtension
+[    21.069] (II) Initializing extension XFree86-DGA
+[    21.069] (II) Initializing extension XFree86-DRI
+[    21.069] (II) Initializing extension DRI2
+[    21.078] (II) intel(0): switch to mode 3840x2160@30.0 on HDMI1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    21.106] (II) intel(0): Setting screen physical size to 1016 x 571
+[    21.189] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    21.189] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    21.189] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    21.189] (**) Power Button: Applying InputClass "system-keyboard"
+[    21.189] (II) LoadModule: "libinput"
+[    21.189] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    21.194] (II) Module libinput: vendor="X.Org Foundation"
+[    21.194] 	compiled for 1.20.3, module version = 0.28.2
+[    21.194] 	Module class: X.Org XInput Driver
+[    21.194] 	ABI class: X.Org XInput driver, version 24.1
+[    21.194] (II) Using input driver 'libinput' for 'Power Button'
+[    21.194] (**) Power Button: always reports core events
+[    21.194] (**) Option "Device" "/dev/input/event1"
+[    21.194] (**) Option "_source" "server/udev"
+[    21.202] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    21.202] (II) event1  - Power Button: device is a keyboard
+[    21.202] (II) event1  - Power Button: device removed
+[    21.214] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    21.214] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    21.214] (**) Option "xkb_model" "pc105"
+[    21.214] (**) Option "xkb_layout" "ru,us"
+[    21.214] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.235] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    21.235] (II) event1  - Power Button: device is a keyboard
+[    21.236] (II) config/udev: Adding input device Video Bus (/dev/input/event14)
+[    21.236] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    21.236] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    21.236] (**) Video Bus: Applying InputClass "system-keyboard"
+[    21.236] (II) Using input driver 'libinput' for 'Video Bus'
+[    21.236] (**) Video Bus: always reports core events
+[    21.236] (**) Option "Device" "/dev/input/event14"
+[    21.236] (**) Option "_source" "server/udev"
+[    21.236] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    21.236] (II) event14 - Video Bus: device is a keyboard
+[    21.236] (II) event14 - Video Bus: device removed
+[    21.305] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input14/event14"
+[    21.305] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    21.305] (**) Option "xkb_model" "pc105"
+[    21.305] (**) Option "xkb_layout" "ru,us"
+[    21.305] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.307] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    21.307] (II) event14 - Video Bus: device is a keyboard
+[    21.308] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    21.308] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    21.308] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    21.308] (**) Power Button: Applying InputClass "system-keyboard"
+[    21.308] (II) Using input driver 'libinput' for 'Power Button'
+[    21.308] (**) Power Button: always reports core events
+[    21.308] (**) Option "Device" "/dev/input/event0"
+[    21.308] (**) Option "_source" "server/udev"
+[    21.309] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    21.309] (II) event0  - Power Button: device is a keyboard
+[    21.310] (II) event0  - Power Button: device removed
+[    21.321] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    21.321] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    21.321] (**) Option "xkb_model" "pc105"
+[    21.321] (**) Option "xkb_layout" "ru,us"
+[    21.321] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.322] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    21.322] (II) event0  - Power Button: device is a keyboard
+[    21.323] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=3 (/dev/input/event15)
+[    21.323] (II) No input driver specified, ignoring this device.
+[    21.323] (II) This device may have been added with another device file.
+[    21.324] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=7 (/dev/input/event16)
+[    21.324] (II) No input driver specified, ignoring this device.
+[    21.324] (II) This device may have been added with another device file.
+[    21.324] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=8 (/dev/input/event17)
+[    21.324] (II) No input driver specified, ignoring this device.
+[    21.324] (II) This device may have been added with another device file.
+[    21.325] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=9 (/dev/input/event18)
+[    21.325] (II) No input driver specified, ignoring this device.
+[    21.325] (II) This device may have been added with another device file.
+[    21.325] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=10 (/dev/input/event19)
+[    21.326] (II) No input driver specified, ignoring this device.
+[    21.326] (II) This device may have been added with another device file.
+[    21.327] (II) config/udev: Adding input device A4TECH USB Device Keyboard (/dev/input/event2)
+[    21.327] (**) A4TECH USB Device Keyboard: Applying InputClass "evdev keyboard catchall"
+[    21.327] (**) A4TECH USB Device Keyboard: Applying InputClass "libinput keyboard catchall"
+[    21.327] (**) A4TECH USB Device Keyboard: Applying InputClass "system-keyboard"
+[    21.327] (II) Using input driver 'libinput' for 'A4TECH USB Device Keyboard'
+[    21.327] (**) A4TECH USB Device Keyboard: always reports core events
+[    21.327] (**) Option "Device" "/dev/input/event2"
+[    21.327] (**) Option "_source" "server/udev"
+[    21.329] (II) event2  - A4TECH USB Device Keyboard: is tagged by udev as: Keyboard
+[    21.329] (II) event2  - A4TECH USB Device Keyboard: device is a keyboard
+[    21.329] (II) event2  - A4TECH USB Device Keyboard: device removed
+[    21.361] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:09DA:9066.0001/input/input2/event2"
+[    21.361] (II) XINPUT: Adding extended input device "A4TECH USB Device Keyboard" (type: KEYBOARD, id 9)
+[    21.361] (**) Option "xkb_model" "pc105"
+[    21.361] (**) Option "xkb_layout" "ru,us"
+[    21.361] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.364] (II) event2  - A4TECH USB Device Keyboard: is tagged by udev as: Keyboard
+[    21.364] (II) event2  - A4TECH USB Device Keyboard: device is a keyboard
+[    21.366] (II) config/udev: Adding input device A4TECH USB Device System Control (/dev/input/event3)
+[    21.366] (**) A4TECH USB Device System Control: Applying InputClass "evdev keyboard catchall"
+[    21.366] (**) A4TECH USB Device System Control: Applying InputClass "libinput keyboard catchall"
+[    21.366] (**) A4TECH USB Device System Control: Applying InputClass "system-keyboard"
+[    21.366] (II) Using input driver 'libinput' for 'A4TECH USB Device System Control'
+[    21.366] (**) A4TECH USB Device System Control: always reports core events
+[    21.366] (**) Option "Device" "/dev/input/event3"
+[    21.366] (**) Option "_source" "server/udev"
+[    21.369] (II) event3  - A4TECH USB Device System Control: is tagged by udev as: Keyboard
+[    21.369] (II) event3  - A4TECH USB Device System Control: device is a keyboard
+[    21.369] (II) event3  - A4TECH USB Device System Control: device removed
+[    21.401] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:09DA:9066.0001/input/input3/event3"
+[    21.401] (II) XINPUT: Adding extended input device "A4TECH USB Device System Control" (type: KEYBOARD, id 10)
+[    21.401] (**) Option "xkb_model" "pc105"
+[    21.401] (**) Option "xkb_layout" "ru,us"
+[    21.401] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.404] (II) event3  - A4TECH USB Device System Control: is tagged by udev as: Keyboard
+[    21.404] (II) event3  - A4TECH USB Device System Control: device is a keyboard
+[    21.406] (II) config/udev: Adding input device A4TECH USB Device Consumer Control (/dev/input/event4)
+[    21.406] (**) A4TECH USB Device Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    21.406] (**) A4TECH USB Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    21.406] (**) A4TECH USB Device Consumer Control: Applying InputClass "system-keyboard"
+[    21.406] (II) Using input driver 'libinput' for 'A4TECH USB Device Consumer Control'
+[    21.406] (**) A4TECH USB Device Consumer Control: always reports core events
+[    21.406] (**) Option "Device" "/dev/input/event4"
+[    21.406] (**) Option "_source" "server/udev"
+[    21.409] (II) event4  - A4TECH USB Device Consumer Control: is tagged by udev as: Keyboard
+[    21.409] (II) event4  - A4TECH USB Device Consumer Control: device is a keyboard
+[    21.410] (II) event4  - A4TECH USB Device Consumer Control: device removed
+[    21.441] (II) libinput: A4TECH USB Device Consumer Control: needs a virtual subdevice
+[    21.441] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:09DA:9066.0001/input/input4/event4"
+[    21.441] (II) XINPUT: Adding extended input device "A4TECH USB Device Consumer Control" (type: MOUSE, id 11)
+[    21.441] (**) Option "AccelerationScheme" "none"
+[    21.441] (**) A4TECH USB Device Consumer Control: (accel) selected scheme none/0
+[    21.441] (**) A4TECH USB Device Consumer Control: (accel) acceleration factor: 2.000
+[    21.441] (**) A4TECH USB Device Consumer Control: (accel) acceleration threshold: 4
+[    21.444] (II) event4  - A4TECH USB Device Consumer Control: is tagged by udev as: Keyboard
+[    21.444] (II) event4  - A4TECH USB Device Consumer Control: device is a keyboard
+[    21.446] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event5)
+[    21.446] (II) No input driver specified, ignoring this device.
+[    21.446] (II) This device may have been added with another device file.
+[    21.447] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event6)
+[    21.447] (**) A4TECH USB Device: Applying InputClass "evdev pointer catchall"
+[    21.447] (**) A4TECH USB Device: Applying InputClass "libinput pointer catchall"
+[    21.447] (II) Using input driver 'libinput' for 'A4TECH USB Device'
+[    21.447] (**) A4TECH USB Device: always reports core events
+[    21.447] (**) Option "Device" "/dev/input/event6"
+[    21.448] (**) Option "_source" "server/udev"
+[    21.507] (II) event6  - A4TECH USB Device: is tagged by udev as: Mouse
+[    21.507] (II) event6  - A4TECH USB Device: device is a pointer
+[    21.507] (II) event6  - A4TECH USB Device: device removed
+[    21.574] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.1/0003:09DA:9066.0002/input/input6/event6"
+[    21.574] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: MOUSE, id 12)
+[    21.574] (**) Option "AccelerationScheme" "none"
+[    21.575] (**) A4TECH USB Device: (accel) selected scheme none/0
+[    21.575] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[    21.575] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[    21.634] (II) event6  - A4TECH USB Device: is tagged by udev as: Mouse
+[    21.634] (II) event6  - A4TECH USB Device: device is a pointer
+[    21.635] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/mouse0)
+[    21.635] (II) No input driver specified, ignoring this device.
+[    21.635] (II) This device may have been added with another device file.
+[    21.637] (II) config/udev: Adding input device SIGMACHIP USB Keyboard (/dev/input/event7)
+[    21.637] (**) SIGMACHIP USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[    21.637] (**) SIGMACHIP USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    21.637] (**) SIGMACHIP USB Keyboard: Applying InputClass "system-keyboard"
+[    21.637] (II) Using input driver 'libinput' for 'SIGMACHIP USB Keyboard'
+[    21.637] (**) SIGMACHIP USB Keyboard: always reports core events
+[    21.637] (**) Option "Device" "/dev/input/event7"
+[    21.637] (**) Option "_source" "server/udev"
+[    21.641] (II) event7  - SIGMACHIP USB Keyboard: is tagged by udev as: Keyboard
+[    21.641] (II) event7  - SIGMACHIP USB Keyboard: device is a keyboard
+[    21.641] (II) event7  - SIGMACHIP USB Keyboard: device removed
+[    21.668] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-11/2-11:1.0/0003:1C4F:0055.0003/input/input7/event7"
+[    21.668] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard" (type: KEYBOARD, id 13)
+[    21.668] (**) Option "xkb_model" "pc105"
+[    21.668] (**) Option "xkb_layout" "ru,us"
+[    21.668] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.670] (II) event7  - SIGMACHIP USB Keyboard: is tagged by udev as: Keyboard
+[    21.670] (II) event7  - SIGMACHIP USB Keyboard: device is a keyboard
+[    21.672] (II) config/udev: Adding input device SIGMACHIP USB Keyboard Consumer Control (/dev/input/event8)
+[    21.672] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    21.672] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    21.672] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "system-keyboard"
+[    21.672] (II) Using input driver 'libinput' for 'SIGMACHIP USB Keyboard Consumer Control'
+[    21.672] (**) SIGMACHIP USB Keyboard Consumer Control: always reports core events
+[    21.672] (**) Option "Device" "/dev/input/event8"
+[    21.672] (**) Option "_source" "server/udev"
+[    21.674] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[    21.674] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: device is a keyboard
+[    21.675] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: device removed
+[    21.708] (II) libinput: SIGMACHIP USB Keyboard Consumer Control: needs a virtual subdevice
+[    21.708] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-11/2-11:1.1/0003:1C4F:0055.0004/input/input8/event8"
+[    21.708] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard Consumer Control" (type: MOUSE, id 14)
+[    21.708] (**) Option "AccelerationScheme" "none"
+[    21.708] (**) SIGMACHIP USB Keyboard Consumer Control: (accel) selected scheme none/0
+[    21.708] (**) SIGMACHIP USB Keyboard Consumer Control: (accel) acceleration factor: 2.000
+[    21.708] (**) SIGMACHIP USB Keyboard Consumer Control: (accel) acceleration threshold: 4
+[    21.711] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[    21.711] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: device is a keyboard
+[    21.713] (II) config/udev: Adding input device SIGMACHIP USB Keyboard System Control (/dev/input/event9)
+[    21.713] (**) SIGMACHIP USB Keyboard System Control: Applying InputClass "evdev keyboard catchall"
+[    21.713] (**) SIGMACHIP USB Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[    21.713] (**) SIGMACHIP USB Keyboard System Control: Applying InputClass "system-keyboard"
+[    21.713] (II) Using input driver 'libinput' for 'SIGMACHIP USB Keyboard System Control'
+[    21.713] (**) SIGMACHIP USB Keyboard System Control: always reports core events
+[    21.713] (**) Option "Device" "/dev/input/event9"
+[    21.713] (**) Option "_source" "server/udev"
+[    21.717] (II) event9  - SIGMACHIP USB Keyboard System Control: is tagged by udev as: Keyboard
+[    21.717] (II) event9  - SIGMACHIP USB Keyboard System Control: device is a keyboard
+[    21.717] (II) event9  - SIGMACHIP USB Keyboard System Control: device removed
+[    21.748] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-11/2-11:1.1/0003:1C4F:0055.0004/input/input9/event9"
+[    21.748] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard System Control" (type: KEYBOARD, id 15)
+[    21.748] (**) Option "xkb_model" "pc105"
+[    21.748] (**) Option "xkb_layout" "ru,us"
+[    21.748] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.751] (II) event9  - SIGMACHIP USB Keyboard System Control: is tagged by udev as: Keyboard
+[    21.751] (II) event9  - SIGMACHIP USB Keyboard System Control: device is a keyboard
+[    21.752] (II) config/udev: Adding input device HDA Intel PCH Rear Mic (/dev/input/event11)
+[    21.752] (II) No input driver specified, ignoring this device.
+[    21.752] (II) This device may have been added with another device file.
+[    21.752] (II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event12)
+[    21.752] (II) No input driver specified, ignoring this device.
+[    21.752] (II) This device may have been added with another device file.
+[    21.753] (II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event13)
+[    21.753] (II) No input driver specified, ignoring this device.
+[    21.753] (II) This device may have been added with another device file.
+[    21.754] (II) config/udev: Adding input device PC Speaker (/dev/input/event10)
+[    21.754] (II) No input driver specified, ignoring this device.
+[    21.754] (II) This device may have been added with another device file.
+[    21.806] (**) A4TECH USB Device Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    21.806] (**) A4TECH USB Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    21.806] (**) A4TECH USB Device Consumer Control: Applying InputClass "system-keyboard"
+[    21.806] (II) Using input driver 'libinput' for 'A4TECH USB Device Consumer Control'
+[    21.806] (**) A4TECH USB Device Consumer Control: always reports core events
+[    21.806] (**) Option "Device" "/dev/input/event4"
+[    21.806] (**) Option "_source" "_driver/libinput"
+[    21.806] (II) libinput: A4TECH USB Device Consumer Control: is a virtual subdevice
+[    21.806] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:09DA:9066.0001/input/input4/event4"
+[    21.806] (II) XINPUT: Adding extended input device "A4TECH USB Device Consumer Control" (type: KEYBOARD, id 16)
+[    21.806] (**) Option "xkb_model" "pc105"
+[    21.806] (**) Option "xkb_layout" "ru,us"
+[    21.806] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    21.806] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    21.806] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    21.806] (**) SIGMACHIP USB Keyboard Consumer Control: Applying InputClass "system-keyboard"
+[    21.806] (II) Using input driver 'libinput' for 'SIGMACHIP USB Keyboard Consumer Control'
+[    21.806] (**) SIGMACHIP USB Keyboard Consumer Control: always reports core events
+[    21.806] (**) Option "Device" "/dev/input/event8"
+[    21.806] (**) Option "_source" "_driver/libinput"
+[    21.806] (II) libinput: SIGMACHIP USB Keyboard Consumer Control: is a virtual subdevice
+[    21.806] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-11/2-11:1.1/0003:1C4F:0055.0004/input/input8/event8"
+[    21.806] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard Consumer Control" (type: KEYBOARD, id 17)
+[    21.806] (**) Option "xkb_model" "pc105"
+[    21.806] (**) Option "xkb_layout" "ru,us"
+[    21.806] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll"
+[    23.057] (II) intel(0): EDID vendor "UTV", prod id 47
+[    23.057] (II) intel(0): Using EDID range info for horizontal sync
+[    23.057] (II) intel(0): Using EDID range info for vertical refresh
+[    23.057] (II) intel(0): Printing DDC gathered Modelines:
+[    23.057] (II) intel(0): Modeline "3840x2160"x0.0  297.00  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (67.5 kHz eP)
+[    23.057] (II) intel(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[    23.057] (II) intel(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    23.057] (II) intel(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    23.057] (II) intel(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    23.057] (II) intel(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[    23.057] (II) intel(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)
+[    23.057] (II) intel(0): Modeline "1920x1080"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)
+[    23.057] (II) intel(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    23.057] (II) intel(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    23.057] (II) intel(0): Modeline "1280x960"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[    23.057] (II) intel(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    23.057] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    27.895] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    27.895] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    28.257] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    28.440] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    28.539] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[    28.764] (--) intel(0): HDMI max TMDS frequency 300000KHz
+[   158.502] (EE) client bug: timer event6 debounce short: offset negative (-6ms)
+[   233.570] (EE) client bug: timer event6 debounce short: offset negative (-7ms)
+[   348.736] (EE) client bug: timer event6 debounce short: offset negative (-2ms)
+[   391.832] (EE) client bug: timer event6 debounce short: offset negative (-5ms)
+[  1016.900] (EE) client bug: timer event6 debounce: offset negative (-22ms)
+[  1017.050] (EE) client bug: timer event6 debounce: offset negative (-8ms)
+[  1017.050] (EE) client bug: timer event6 debounce short: offset negative (-21ms)
+[  1073.670] (EE) client bug: timer event6 debounce: offset negative (-7ms)
+[  1074.488] (EE) client bug: timer event6 debounce short: offset negative (-4ms)
+[  1092.970] (II) event1  - Power Button: device removed
+[  1092.984] (II) event14 - Video Bus: device removed
+[  1093.011] (II) event0  - Power Button: device removed
+[  1093.027] (II) event2  - A4TECH USB Device Keyboard: device removed
+[  1093.041] (II) event3  - A4TECH USB Device System Control: device removed
+[  1093.051] (II) event6  - A4TECH USB Device: device removed
+[  1093.081] (II) event7  - SIGMACHIP USB Keyboard: device removed
+[  1093.091] (II) event9  - SIGMACHIP USB Keyboard System Control: device removed
+[  1093.107] (II) event4  - A4TECH USB Device Consumer Control: device removed
+[  1093.147] (II) event8  - SIGMACHIP USB Keyboard Consumer Control: device removed
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.212] (II) UnloadModule: "libinput"
+[  1093.214] (II) UnloadModule: "libinput"
+[  1093.355] (II) Server terminated successfully (0). Closing log file.
